@@ -14,7 +14,7 @@ var cbpAnimatedHeader = (function() {
 		header = document.querySelector( '.navbar-default' ),
 		//brand = document.getElementById("brand"),
 		didScroll = false,
-		changeHeaderOn = 150;
+		changeHeaderOn = 500;
 
 	function init() {
 		window.addEventListener( 'scroll', function( event ) {
@@ -29,9 +29,13 @@ var cbpAnimatedHeader = (function() {
 		var sy = scrollY();
 		if ( sy >= changeHeaderOn ) {
 			classie.add( header, 'navbar-shrink' );
+			$("#navbarLogoS").show();
+			//$("#navbarLogoS").style.visibility;
 		}
 		else {
 			classie.remove( header, 'navbar-shrink' );
+			$("#navbarLogoS").hide();
+			//$("#navbarLogoS").style.visibility;
 		}
 		didScroll = false;
 	}
