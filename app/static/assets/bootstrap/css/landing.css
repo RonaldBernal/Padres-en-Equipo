@@ -567,6 +567,7 @@ aside.clients img {
 }
 
 section#videos {
+    /*
     text-align: center;
     color: #FFF;
     background-attachment: scroll;
@@ -583,13 +584,13 @@ section#videos {
     background-size: cover;
     -o-background-size: cover;
     
-    /*
-    background-image: url(../img/map-image.png);
-    
-    background-color: #222;
+
+    yellow: #F2FF19;
+    */
+    background-color: #E0E852; 
     background-position: center;
     background-repeat: no-repeat;
-    */
+    padding-bottom: 50px !important;
 }
 
 section#videos .section-heading {
@@ -644,6 +645,25 @@ section#videos:-ms-input-placeholder {
 
 section#videos .text-danger {
     color: #e74c3c;
+}
+
+section#vipZone{
+    text-align: center;
+    color: #FFF;
+    background-attachment: scroll;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.3), 
+            rgba(0, 0, 0, 0.3)
+        ),
+        url(../img/mdteam.jpg);
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    padding-top: 300px !important;
 }
 
 footer {

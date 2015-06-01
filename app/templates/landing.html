@@ -15,10 +15,11 @@
    <link rel="stylesheet" type="text/css" href="{% static "assets/bootstrap/css/bootstrap.min.css" %}">
    <!-- Custom CSS -->
    <link rel="stylesheet" type="text/css" href="{% static "assets/bootstrap/css/landing.css" %}">
-   <!-- Custom Fonts -->
-   <link rel="stylesheet" type="text/css" href="{% static "assets/bootstrap/css/font-awesome.min.css" %}">
+   <!-- Custom Fonts 
    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Kaushan+Script'>
-
+   -->
+   <link rel="stylesheet" type="text/css" href="{% static "assets/bootstrap/css/font-awesome.min.css" %}">
+   
    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
    <!--[if lt IE 9]>
@@ -41,7 +42,7 @@
                <span class="icon-bar"></span>
             </button>
             <img id="navbarLogoS" class="img-responsive center-block" 
-            src="{% static "assets/bootstrap/img/nav_logo_m.png" %}" alt="" style="display: none;">
+            src="{% static "assets/bootstrap/img/nav_logo_s.png" %}" alt="" style="display: none;">
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -75,7 +76,7 @@
          <div class="intro-text">
             <!-- <div class="intro-lead-in">La mejor información</div>
             <div class="intro-heading">Para el cuidado de tu bebé</div> -->
-            <img id="navbarLogoM" class="img-responsive center-block" src="{% static "assets/bootstrap/img/logo.png" %}" alt="">
+            <img id="navbarLogoM" class="img-responsive center-block" src="{% static "assets/bootstrap/img/logo_l.png" %}" alt="">
             <a href="#articles" class="page-scroll btn btn-primary btn-xl">Más información</a>
          </div>
       </div>
@@ -87,57 +88,63 @@
          <div class="row">
             <div class="col-lg-12 text-center">
                <h2 class="section-heading">Articulos</h2>
-               <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+               <h3 class="section-subheading text-muted">Los mejores Artículos para el cuidado de tu bebé.</h3>
             </div>
          </div>
          <div class="row text-center">
             <div class="col-md-2">
-               <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-female fa-stack-1x fa-inverse"></i>
-               </span>
-               <h4 class="service-heading">Embarazo</h4>
-               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+               <a href="/Embarazo/">
+                  <span class="fa-stack fa-4x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-female fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Embarazo</h4>
+               </a>
             </div>
             <div class="col-md-2">
-               <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
-               </span>
-               <h4 class="service-heading">Nutrición</h4>
-               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+               <a href="/Nutricion/">
+                  <span class="fa-stack fa-4x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Nutrición</h4>
+               </a>
             </div>
             <div class="col-md-2">
-               <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
-               </span>
-               <h4 class="service-heading">Cuidados e Higiene</h4>
-               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+               <a href="/CuidadosHigiene/">
+                  <span class="fa-stack fa-4x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Cuidados e Higiene</h4>
+               </a>
             </div>
             <div class="col-md-2">
-               <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-               </span>
-               <h4 class="service-heading">Vestimenta</h4>
-               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+               <a href="/Vestimenta/">
+                  <span class="fa-stack fa-4x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Vestimenta</h4>
+               </a>
             </div>
             <div class="col-md-2">
-               <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
-               </span>
-               <h4 class="service-heading">Juegos para padres e hijos</h4>
-               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+               <a href="/Juegos/">
+                  <span class="fa-stack fa-4x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Juegos para padres e Hijos</h4>
+               </a>
             </div>
             <div class="col-md-2">
-               <span class="fa-stack fa-4x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-               </span>
-               <h4 class="service-heading">Apps</h4>
-               <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+               <a href="/Juegos/">
+                  <span class="fa-stack fa-4x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+                  </span>
+                  <h4 class="service-heading">Apps</h4>
+               </a>
             </div>
          </div>
       </div>
@@ -151,102 +158,131 @@
          </div>
          <div class="row">
             <div class="col-lg-12">
-               <span class="fa-stack fa-2x">
-                  <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                  <i class="fa fa-female fa-stack-1x fa-inverse"></i>
-               </span>
-               <h4>Embarazo</h4>
+               <h4>
+                  <span class="fa-stack fa-2x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-female fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Embarazo
+               </h4>
                <div class="row">
                   <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xrP_0gSxZ-w" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                   <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lJl4ZfB9Sw4" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                   <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z_as5CqhgW8" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                   <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/39IQEp5ebhM" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                </div>
-               <h4>Nutrición</h4>
+               <h4>
+                  <span class="fa-stack fa-2x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-cutlery fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Nutrición
+               </h4>
                <div class="row">
                   <div class="col-lg-4 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ciSviKQD6Bg" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                   <div class="col-lg-4 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/5DueTYiWVvA" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                   <div class="col-lg-4 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/p5QvBYZbeNM" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                </div>
-               <h4>Cuidados e Higiene</h4>
+               <h4>
+                  <span class="fa-stack fa-2x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-eye fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Cuidados e Higiene
+               </h4>
                <div class="row">
                   <div class="col-lg-4 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/iPQKv8cILKI" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                   <div class="col-lg-4 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/_t0DA5ppXnU" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                   <div class="col-lg-4 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
+                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/28TCawFC6Lo" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
                </div>
-               <h4>vestimenta</h4>
+               <h4>
+                  <span class="fa-stack fa-2x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Vestimenta
+               </h4>
                <div class="row">
-                  <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/xrP_0gSxZ-w" allowfullscreen>
+                  <div class="col-lg-4 text-center">
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fS5pjQdz7TI" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
-                  <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/lJl4ZfB9Sw4" allowfullscreen>
+                  <div class="col-lg-4 text-center">
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/79CgLbXWkRU" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
-                  <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z_as5CqhgW8" allowfullscreen>
+                  <div class="col-lg-4 text-center">
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/XerYq6QazDw" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
-                  <div class="col-lg-3 text-center">
-                     <div class="embed-responsive embed-responsive-4by3">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Z_as5CqhgW8" allowfullscreen>
+               </div>
+               <h4>
+                  <span class="fa-stack fa-2x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-gamepad fa-stack-1x fa-inverse"></i>
+                  </span>
+                  Juegos para padres e Hijos
+               </h4>
+               <div class="row">
+                  <div class="col-lg-4 col-lg-offset-4 text-center">
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/uV0VwCCkRSc" allowfullscreen>
                         </iframe>
                      </div>
                   </div>
@@ -259,34 +295,34 @@
    <section id="vipZone">
       <div class="container">
          <div class="row">
-            <div class="col-lg-6 text-center login-border">
+            <div class="col-lg-6 text-center">
                <h2 class="section-heading">Pediatra Online</h2>
-               
+               <span class="fa-stack fa-5x">
+                     <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                     <i class="fa fa-user-md fa-stack-1x fa-inverse"></i>
+                  </span>
             </div>
             <div class="col-lg-6 text-center">
                <h2 class="section-heading">Iniciar Sesión</h2>
-               <form id="lgin_form" method="post" action="/login/"> {% csrf_token %}
-                  {% if l_form.error %}
-                     <p class="error"> Error </p>
-                  {% endif %}
+               <form id="lgin_form" action="/chat/">
                   <div class="row login-space">
                      <div class="col-md-offset-3 col-md-6">
                         <div class="form-group">
-                           <input type="text">
+                           <input type="text" class="form-control" placeholder="Correo electrónico">
                         </div>
                      </div>
                   </div>
                   <div class="row login-space">
                      <div class="col-md-offset-3 col-md-6">
                         <div class="form-group">
-                           <input type="text">
+                           <input type="password" class="form-control" placeholder="Contraseña">
                         </div>
                      </div>
                   </div>
                   <div class="row login-space">
                      <div class="clearfix"></div>
                      <div class="col-lg-12 text-center">
-                        <button class="btn btn-xl" onclick="getEmail()">Iniciar Sesión</button>
+                        <button class="btn btn-xl" href="/chat/">Iniciar Sesión</button>
                      </div>
                   </div>
                </form>
@@ -295,18 +331,20 @@
          </div>
       </div>
    </section>
-   <hr style="border-top: 1px solid #BABABA;">
    <!-- Acerca de nosotros Section -->
    <section id="about">
       <div class="container">
          <div class="row">
-            <div class="col-lg-12 text-center">
-               <h2 class="section-heading">Acerca de nosotros</h2>
-               <h3 class="section-subheading text-muted">Integrantes:</h3>
+            <div class="col-lg-6 text-center">
+               <h2>Misión</h2>
+               <h5>Brindar información a padres primerizos sobre los cuidados, tips y consejos, durante y después del embarazo.</h5>
+            </div>
+            <div class="col-lg-6 text-center">
+               <h2>Visión</h2>
+               <h5>Ser el medio digital líder en la generación de contenidos para padres primerizos que se encuentran en la etapa prenatal y post parto, en un período de dos años.</h5>
             </div>
          </div>
-         <div class="row">
-            <div class="col-lg-12">
+               <!--
                <ul class="timeline">
                   <li>
                      <div class="timeline-image">
@@ -314,24 +352,23 @@
                      </div>
                      <div class="timeline-panel">
                         <div class="timeline-heading">
-                           <h4>Karen Vanegas</h4>
+                           <br><br>
                         </div>
                         <div class="timeline-body">
-                           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                           <h4>Karen Vanegas</h4>
                         </div>
                      </div>
                   </li>
                   <li class="timeline-inverted">
                      <div class="timeline-image">
-                        <img class="img-circle img-responsive" src="{% static "assets/bootstrap/img/image.png" %}" alt="">
+                        <img class="img-circle img-responsive" src="{% static "assets/bootstrap/img/Oscar.jpg" %}" alt="">
                      </div>
                      <div class="timeline-panel">
                         <div class="timeline-heading">
-                           <h4>March 2011</h4>
-                           <h4 class="subheading">An Agency is Born</h4>
+                           <br><br>
                         </div>
                         <div class="timeline-body">
-                           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                           <h4>Oscar Majano</h4>
                         </div>
                      </div>
                   </li>
@@ -341,15 +378,13 @@
                      </div>
                      <div class="timeline-panel">
                         <div class="timeline-heading">
-                           <h4>December 2012</h4>
-                           <h4 class="subheading">Transition to Full Service</h4>
+                           <br><br>
                         </div>
                         <div class="timeline-body">
-                           <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                           <h4></h4>
                         </div>
                      </div>
                   </li>
-                  <!--
                   <li class="timeline-inverted">
                      <div class="timeline-image">
                         <img class="img-circle img-responsive" src="{% static "assets/bootstrap/img/image.png" %}" alt="">
@@ -364,7 +399,6 @@
                         </div>
                      </div>
                   </li>
-                  -->
                   <li class="timeline-inverted">
                      <div class="timeline-image">
                         <h4>Be Part
@@ -374,8 +408,7 @@
                      </div>
                   </li>
                </ul>
-            </div>
-         </div>
+               -->
       </div>
    </section>
    <hr style="border-top: 1px solid #BABABA;">
@@ -410,15 +443,6 @@
 
    <!-- Custom Theme JavaScript -->
    <script type="text/javascript" src="{% static "assets/bootstrap/js/login.js" %}"></script>
-   <script type="text/javascript">
-      function getEmail(){
-         var u = document.getElementById("register_id_username");
-         var e = document.getElementById("register_id_email");
-         e.value = u.value;
-         
-         document.getElementById("reg_form").submit();
-      }
-   </script>
 </body>
 
 </html>

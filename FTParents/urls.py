@@ -7,6 +7,7 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Core:
     url(r'^$', 'app.views.landing', name ='landing'),
+    url(r'^detail/$', 'app.views.detail', name ='detail'),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon.ico')),
     #url(r'^admin/', include(admin.site.urls)),
 )

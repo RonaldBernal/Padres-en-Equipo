@@ -12,9 +12,9 @@
 
       {% load staticfiles %}
       <!-- Semantic UI Core CSS -->
-      <link rel="stylesheet" type="text/css" href="{% static "assets/css/semantic.css" %}">
+      <link rel="stylesheet" type="text/css" href="{% static "assets/semantic/css/semantic.css" %}">
       <!-- Custom CSS -->
-      <link rel="stylesheet" type="text/css" href="{% static "assets/css/custom/home.css" %}">
+      <link rel="stylesheet" type="text/css" href="{% static "assets/semantic/css/custom/home.css" %}">
       <!-- Custom Fonts -->
       <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Kaushan+Script'>
    </head>
@@ -28,7 +28,7 @@
                <i class="settings icon"></i>Industrial Network
             </a>
             <a href="/profile/" class="active yellow item">
-               <img class="ui navbarimg left floated avatar image" src="{% static "assets/img/white-image.png" %}">
+               <img class="ui navbarimg left floated avatar image" src="{% static "assets/semantic/img/white-image.png" %}">
                Perfil
             </a>
          </div>
@@ -81,12 +81,12 @@
         </div>
     </footer>
 
-   <script type="text/javascript" src="{% static "assets/js/jquery.js" %}"></script>
+   <script type="text/javascript" src="{% static "assets/semantic/js/jquery.js" %}"></script>
 
    <!-- Used with Tab History !-->
    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
-   <script type="text/javascript" src="{% static "assets/js/semantic.js" %}"></script>
-   <script type="text/javascript" src="{% static "assets/js/custom.js" %}"></script>
+   <script type="text/javascript" src="{% static "assets/semantic/js/semantic.js" %}"></script>
+   <script type="text/javascript" src="{% static "assets/semantic/js/custom.js" %}"></script>
    {% block scripts %}{% endblock %}
 </body>
 </html>
