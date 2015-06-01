@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/CuidadosHigiene/" class="section">Cuidados e Higiene</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                  <div class="ui center aligned huge dividing header">{{title}}</div>
+                  <div class="justified description">
+                     <div class="ui centered grid">
+                        <div class="six wide column">
+                           <img class="ui large image" src="{% static "assets/articleImg/cuidados2.jpg" %}" >
+                        </div>
+                        <div class="ten wide column">
+                           <h4>
+                              Los bebés cuando se alimentan, tragan mucho aire más cuando toman del biberón eso queda en el estómago y comienzan a sentirse incómodos, hay muchos tips para ayudarle a tu bebé a expulsar gases.
+                              <ol>
+                                 <li>
+                                    Cuando el bebé termine de alimentarse, cárgalo sobre tu pecho, con la cabeza sobre tu hombro, comienza a dar palmaditas suaves pero firmes. Así lo ayudarás y poco a poco expulsará gases.
+                                 </li>
+                                 <li>
+                                    Aliméntate saludable y nutritivo, recuerda que todo lo que comes el bebé lo recibe a través del leche materna, no ingieras alimentos  que pueden provocar gases.
+                                 </li>
+                                 <li>
+                                    Ejercicios para movilizar el intestino del bebé y pueda expulsar gases: acostar al bebé y doblar cada una de sus piernitas hacia arriba esto ayudará a que expulse gases. 
+                                 </li>
+                              </ol>
+                           </h4>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

@@ -7,10 +7,10 @@
  */ 
 
 .ui.inverted.menu .yellow.active.item {
-	color: #f2c61f !important;
+	color: #E0E852 !important;
 }
 .ui.inverted.menu .blue.active.item {
-	color: #3b83c0 !important;
+	color: #506BCE !important;
 }
 .ui.inverted.menu .green.active.item{
   color: #5bbd72 !important;
@@ -36,8 +36,9 @@
     height: 1.25em;
     bottom: 0em;
 }
-
-
+.ui.inverted.blue.menu {
+    background-color: #506BCE !important;
+}
 .brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
     color: #fed136 !important;
@@ -84,7 +85,13 @@ h4.about{
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 .form-segment{
   margin: .5em !important;
+}
+.side-padding{
+  padding-right: 90px;
+  padding-left: 90px;
+}
+.top-padding{
+  padding-top: 20px;
 }

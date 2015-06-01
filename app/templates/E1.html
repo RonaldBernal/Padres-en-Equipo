@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Embarazo/" class="section">Embarazo</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/embarazo1.jpg" %}" >
+                     <h4>
+                        El embarazo es una etapa bella en donde tu cuerpo presentara muchos cambios, y la piel es uno de los principales cambios que veras.
+                     </h4>
+                     <h4>
+                        Es normal que dentro de los nueve meses de embarazas la piel tienda a oscurecerse un poco, la aparición de acné y un poco más de brillo, estos transformaciones se dan por la hormonas que se encuentran en niveles altos y pueden generar cambios pero para esto es necesario que se tenga una alimentación sana, ejercicios ligeros y estar en constante visitas al médico para que sea este quien pueda dar el mejor tratamiento según el tu embarazo.
+                     </h4>
+                     <h4>
+                        Según los especialistas en la mayoría de casos las mujeres recuperan la textura y la pigmentación de su piel luego del parto, ya que las hormonas vuelven a su estado normal.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

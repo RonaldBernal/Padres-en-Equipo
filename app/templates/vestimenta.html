@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                  <div class="ui center aligned huge dividing header">{{title}}</div>
+                  <div class="justified description">
+                     <div class="ui middle aligned centered grid">
+                        <div class="equal height row">
+                           <div class="middle aligned centered column">
+                              <div class="ui three doubling special cards">
+                                 <div class="ui fluid card" style="margin-left: 300px">
+                                    <div class="dimmable image">
+                                       <div class="ui dimmer">
+                                          <div class="content">
+                                             <div class="center">
+                                                <a href="/V1/" class="ui inverted blue button">Ver Articulo</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <img src="{% static "assets/articleImg/vestimenta1.jpg" %}" >
+                                    </div>
+                                    <div class="content" style="text-align: center;">
+                                       <a class="header" href="/V1/">¿Qué tipo de ropa debe utilizar tu bebé?</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

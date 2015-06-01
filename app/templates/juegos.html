@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                  <div class="ui center aligned huge dividing header">{{title}}</div>
+                  <div class="justified description">
+                     <div class="ui middle aligned centered grid">
+                        <div class="equal height row">
+                           <div class="middle aligned centered column">
+                              <div class="ui three doubling special cards">
+                                 <div class="ui fluid card">
+                                    <div class="dimmable image">
+                                       <div class="ui dimmer">
+                                          <div class="content">
+                                             <div class="center">
+                                                <a href="/G1/" class="ui inverted blue button">Ver Articulo</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <img src="{% static "assets/articleImg/juegos1.jpg" %}" >
+                                    </div>
+                                    <div class="content" style="text-align: center;">
+                                       <a class="header" href="/G1/">¡Los cuentos toman vida!</a>
+                                    </div>
+                                 </div>
+                                 <div class="ui fluid card">
+                                    <div class="dimmable image">
+                                       <div class="ui dimmer">
+                                          <div class="content">
+                                             <div class="center">
+                                                <a href="/G2/" class="ui inverted blue button">Ver Articulo</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <img src="{% static "assets/articleImg/juegos2.jpg" %}" >
+                                    </div>
+                                    <div class="content" style="text-align: center;">
+                                       <a class="header" href="/G2/">Tu pequeño artista</a>
+                                    </div>
+                                 </div>
+                                 <div class="ui fluid card">
+                                    <div class="dimmable image">
+                                       <div class="ui dimmer">
+                                          <div class="content">
+                                             <div class="center">
+                                                <a href="/G3/" class="ui inverted blue button">Ver Articulo</a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <img src="{% static "assets/articleImg/juegos3.jpg" %}" >
+                                    </div>
+                                    <div class="content" style="text-align: center;">
+                                       <a class="header" href="/G3/">¡3, 2, 1 Música maestro!</a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>   
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

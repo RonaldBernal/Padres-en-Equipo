@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Embarazo/" class="section">Embarazo</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/embarazo2.jpg" %}" >
+                     <h4>
+                        Es cierto que en la etapa del embarazo no tendrás ganas de correr muchos kilómetros o de ir al gimnasio a hacer ejercicios pesados pero si es recomendable darle a tus días un poco de ejercicio, esto dependerá si tu embarazo no presenta complicaciones. 
+                     </h4>
+                     <h4>
+                        Se debe de iniciar despacio con una pequeña caminata al parque y poco a poco hacer ejercicios con un poco de peso a manera de darle energías al cuerpo, esto es beneficioso para la mayoría de mujeres y algunas deciden por yoga, Pilates o natación.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

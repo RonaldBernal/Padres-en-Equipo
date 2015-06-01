@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Juegos/" class="section">Juegos para padres e Hijos</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/juegos2.jpg" %}" >
+                     <h4>
+                        Es importante que los niños tengan incentivos a actividades que ayuden a su desarrollo intelectual y creativo,  así como también su instinto de curiosidad por el mundo; que mejor forma que hacer con los colores y formas.
+                        Tener un espacio libre en donde los padres puedan llenarse de pintura con sus hijos y hacer diferentes figuras artísticas de colores brillantes. Pasaran un rato divertido con los pequeños artistas.
+                     </h4>
+                     <h4>
+                        Hay que tener presente tomar las medidas de precaución:
+                     </h4>
+                     <h4>
+                        No dejar que el niño introduzca pintura en su boca, ojos, nariz u oído.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

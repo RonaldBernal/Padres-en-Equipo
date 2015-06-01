@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Papa/" class="section">Para Papá</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium right floated image" src="{% static "assets/articleImg/papa1.jpg" %}" >
+                     <h3>EL PROBLEMA</h3>
+                     <h4>
+                        Su hijo está jugando en la habitación de al lado.* De pronto se escucha que algo se rompe. Usted corre a ver lo que ha sucedido y se encuentra al niño junto a un florero de porcelana roto en mil y un pedazos. La cara de culpa del infante lo dice todo.
+                        <br>
+                        – ¿Rompiste el florero? – le pregunta enojado/a.
+                        <br>
+                        – ¡No, papi, yo no fui! –  le responde de inmediato.
+                        <br>
+                        ¡Pero qué mentira! Y lo peor es que no es la primera. ¿Debería usted preocuparse?
+                     </h4>
+                     <h3>LO QUE USTED DEBE SABER</h3>
+                     <h4>
+                        Todas las mentiras son malas: No existen mentiras blancas o negras, tampoco piadosas, sino lo que en verdad existe es tacto para poder decir las cosas, enséñele a su hijo a decir siempre la verdad con delicadeza.
+                        <br><br>
+                        Pero no todas las mentiras son iguales: Algunas se dicen para hacer daño. Otras, en cambio, se dicen tan solo por la presión del momento, tal vez para evitar un castigo o no pasar vergüenza. Aunque todas las mentiras son malas, algunas son más graves que otras. Si su hijo ha mentido, tome en cuenta su edad y las posibles razones por las que lo ha hecho.
+                        <br><br>
+                        Corrija al niño desde ya que esta pequeño: “Decir la verdad, especialmente cuando más cuesta, es  una lección importante para los niños. Las relaciones están basadas en la confianza y mentir rompería dicho lazo y generaría a su vez que él lo siga haciendo.
+                     </h4>
+                     <h3>LO QUE USTED PUEDE HACER</h3>
+                     <h4>
+                        Trate de entender por qué miente su hijo: ¿Es por miedo al castigo? ¿Es por miedo a decepcionarle? Identifique los factores causantes de la mentira en él y así usted sabrá cuál es la mejor manera de corregirle.
+                        <br><br>
+                        Sustituya las preguntas por afirmaciones: En el ejemplo del principio, el padre sabía bien lo que había pasado, aun así le pregunto a su hijo que sucedió y él niño mintió para que el papá no se enojara; Imagínese usted que en vez de preguntar, el padre hubiese afirmado: “ay, rompiste el florero”, al no hacerle una pregunta, el niño se sentirá menos tentado a mentir.
+                        <br><br>
+                        Felicítelo siempre que diga la verdad: Por naturaleza, los niños buscan agradar a sus padres; utilice esa inclinación a su favor. Explíquele a su hijo que decir la verdad le hace a usted feliz y dígale cuan orgulloso hace se sienta usted de él cada que lo hace. Dígale con claridad que al mentir, perderá la confianza en él y que eso es algo muy difícil de recuperar.
+                        <br><br>
+                        Ponga el ejemplo: Los niños son como una esponja, absorben todo y obviamente usted no puede esperar que él diga la verdad si usted mismo hace cosas como: “Di que no estoy”, “estoy enfermo”. 
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

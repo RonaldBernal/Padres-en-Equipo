@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Embarazo/" class="section">Embarazo</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <h4>
+                        Luego de que una madre da a luz, se encuentra en un momento en que todo comienza a ser nuevo para ella, cambios hormonales y/o emocionales, por ejemplo: sentirse exhausta, adolorida, excitada. Es por esto que a la madre se le recomienda lo siguiente:
+                     </h4>
+                     <h4>
+                        <img class="ui medium right floated image" src="{% static "assets/articleImg/embarazo3.jpg" %}" >
+                        <ul>
+                           <li>
+                              Tener visitas reguladas, principalmente a las primeras horas del parto no es recomendable que terceros los visiten, ya que el bebé únicamente debe estar con los padres.
+                           </li>
+                           <li>
+                              Evitar hacer fuerza o levantar pesos considerables ya que si existen puntos de sutura pueda que estos se rompan.
+                           </li>
+                           <li>
+                              Lleva una dieta balanceada para que no tenga problemas al momento que baje la leche, tomando en cuenta que cabe la posibilidad que también esta sea dolorosa la primera vez.
+                           </li>
+                           <li>
+                              Recibir apoyo incondicional del padre/pareja ya que estos son momentos nuevos para ambos, y se deben apoyar el uno con el otro en toda circunstancia, específicamente el padre debe de ser un sostén en la relación y darle la importancia a madre y bebé para evitar que ella sufra depresión.
+                           </li>
+                           <li>
+                              Evite subir y bajar escaleras.
+                           </li>
+                        </ul>
+                     </h4>
+                     <h4>
+                        Cada embarazo es diferente pero todos deben de tener los cuidados similares en el puerperio y/cuarentena, y es responsabilidad de la pareja llevar el control del bebé pero tampoco se debe de descuidar el de la mamá, que es igual de importante que el de bebé.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

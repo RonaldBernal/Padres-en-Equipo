@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Juegos/" class="section">Juegos para padres e Hijos</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/juegos3.jpg" %}" >
+                     <h4>
+                        La música siempre ha sido un arte que desde el vientre de mamá estamos acostumbras a escuchar melodías, ruidos y demás sonidos que puedan ayudar a contextualizar las  situaciones que nos rodean.
+                     </h4>
+                     <h4>
+                        La música, es un estímulo para el desarrollo intelectual de los niños y a la vez una actividad recreativa que puede ser compartida con mamá y papá incluso sin ninguno de ellos son artistas; y si lo son mucho que mejor.
+                     </h4>
+                     <h4>
+                        Comprarle juguetes musicales con forma de instrumentos puede hacer parte de la banda de la familia y disfrutar de los mejores conciertos de padres e hijos.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

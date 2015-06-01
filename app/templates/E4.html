@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Embarazo/" class="section">Embarazo</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <h4>
+                        Después de 4 o 6 semanas las parteras y médicos recomiendan a las madres que puedan ejercitarse, pero como cada caso es diferente cada una debe de consultar con el médico que le lleva el control y así evitar complicaciones a largo plazo.
+                     </h4>
+                     <h4>
+                        Ten en mente que para volver a tu figura anterior debes de tomar todo con calma, no haciendo movimientos bruscos, ni tampoco levantando pesos que puedan afectarte, haz ejercicios dependiendo de la zona que deseas tonificar, entre las principales son:
+                     </h4>
+                     <h4>
+                        <ul>
+                           <li>
+                              Abdomen: Es la parte que es más difícil para alguna mujeres para tonificar, pero al cumplir la rutina adecuada no tendrás este problema
+                              <ul>
+                                 <li>
+                                    Recuéstate de espaldas con las rodillas flexionadas y las manos detrás de la cabeza.
+                                 </li>
+                                 <li>
+                                    Respira y, a medida que exhalas, contrae los músculos abdominales, apoya la parte baja de la espalda sobre el suelo, y levanta la cabeza y los hombros separándolos del suelo. Mantén la zona muscular central (torso) contraída.
+                                 </li>
+                                 <li>
+                                    Baja suavemente y repite toda la secuencia de ocho a diez veces.
+                                 </li>
+                              </ul>
+                           </li>
+                           <img class="ui medium right floated image" src="{% static "assets/articleImg/embarazo4.jpg" %}" >
+                           <li>
+                              Brazos: se hacen para poder tener la fuerza en el momento de cargar al bebé, uno de los ejercicios para esta extremidad es el siguiente:
+                              <ul>
+                                 <li>
+                                    Comienza poniéndote a cuatro patas con las rodillas directamente debajo de la cadera, y las manos separadas apenas un poco más que el ancho de los hombros.
+                                 </li>
+                                 <li>
+                                    Manteniendo la espalda derecha y el estómago contraído, flexiona suavemente los codos y luego estíralos nuevamente. Respira de forma normal, y no pongas los codos tensos y tiesos al estirarlos. Mantén los músculos abdominales trabajando. (No es necesario que bajes hasta el suelo para que el ejercicio sea eficaz).
+                                 </li>
+                                 <li>
+                                    Repítelo de diez a 12 veces. Haz hasta tres series.
+                                 </li>
+                              </ul>
+                           </li>
+                           <li>
+                              Pelvis: se recomienda realizar los ejercicios de Kegel, estos son aquellos que están destinados a fortalecer la zona de la pelvis, los pasos a seguir son los siguientes: 
+                              <ul>
+                                 <li>
+                                    Recuéstate de espaldas con las rodillas levantadas y los pies apoyados en el suelo.
+                                 </li>
+                                 <li>
+                                    Contrae los músculos de tu vagina como si intentaras interrumpir el flujo de orina cuando vas al baño.
+                                 </li>
+                                 <li>
+                                    Sostén hasta la cuenta de diez, luego relájate. Repítelo diez veces. Trata de hacer hasta tres o cuatro series aproximadamente tres veces por día.
+                                 </li>
+                                 <li>
+                                    No contraigas los músculos de tus piernas ni de tu abdomen.
+                                 </li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </h4>
+                     <h4>
+                        No  te desanimes si nos ves cambios a corto plazo y ten en mente que si sufres de sangrados debes de interrumpir cualquier rutina que hayas decidido hacer, pide ayuda profesional para crear la rutina que se apegue más a tus necesidades y condición.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

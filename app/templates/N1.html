@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Nutricion/" class="section">Nutricion</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/nutricion1.jpg" %}" >
+                     <h4>
+                        En la actualidad, muchas madres tienen la duda de qué es lo más recomendable para alimentar a recién nacido, ya que el estómago de los bebés no está formado al 100% ni tampoco está lo suficientemente adecuado para digerir cualquier tipo de comida.
+                     </h4>
+                     <h4>
+                        Médicos recomiendan a las madres que entre los primeros 4 a 6 meses únicamente se les brinde a leche materna, debido que ésta posee nutrientes y minerales que ayudan y fortalecen a los pequeños pero para esto las mamás deben de comer sanamente, solo en pocos casos se recomienda dar fórmulas, pero de preferencia por factores como problemas lactantes.
+                     </h4>
+                     <br>
+                     <h4>
+                        Para ser que la leche materna sea más nutritiva para los bebés, se recomienda a las mamás llevar una dieta balanceada, la cual se las especificará un nutricionista dependiendo de la madre, a ellas se le recomienda comer lo siguiente:
+                        <ul>
+                           <li>
+                              Ingerir por lo menos medio litro de leche por día, debido a las vitaminas A y D que favorecen al crecimiento de huesos, fuentes ricas de calcio y fósforo, formación de piel, ayuda a la formación y crecimiento de células entre otros beneficios.
+                           </li>
+                           <li>
+                              Consume líquidos como agua, zumos y/o jugos naturales, evitando la ingesta de bebidas carbonatadas, tés y bebidas diuréticas (bebidas que sirven más para eliminar agua que para reconstituir las reservas, es decir,  aumentar el volumen de la orina.)
+                           </li>
+                        </ul>
+                     </h4>
+                     <h4>
+                        Pero al momento de ingerir alimentos la madre debe fijarse más en las reacciones de los pequeños, ya que Carmen García explica que, “No hay alimentos prohibidos, algunos cambian el sabor de la leche, por eso hay que observar la reacción del bebé para consumirlos o no”.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

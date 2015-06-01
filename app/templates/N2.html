@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Nutricion/" class="section">Nutricion</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/nutricion2.jpg" %}" >
+                     <h4>
+                        Después de 6 meses del parto, los pediatras y la Organización Mundial de la Salud recomiendan empezar con la ingesta de alimentos, cabe mencionar que estos todavía no pueden ser sólidos y/o duros y que tampoco se le debe de quitar de un solo la lactancia materna, las madres deben de equilibrar ambas partes para que el bebé crezca grande y fuerte.
+                     </h4>
+                     <h4>
+                        Al momento de ingerir los alimentos, se recomienda lavarle las manos a los niños para que vivan la experiencia de comer con sus dedos, siempre y cuando enseñándoles los respectivos modales sino hacerlo con una cuchara pequeña y al cuidado de los padres, es bueno que desde muy pequeños se les vaya acostumbrando a comer en familia y sobre la mesa, entre los alimentos más recomendables están:
+                        <ul>
+                           <li>
+                              Frutas y verduras en pequeñas porciones.
+                           </li>
+                           <li>
+                              Papillas de frutas y verduras, a las semanas se le pueden ir añadiendo o quitando, con el fin de variarlas y según el gusto del bebé.
+                           </li>
+                           <li>
+                              Gluten (cereales con trigo, cebada, centeno o avena), estos deben ser en pequeñas porciones, se recomienda darlos no antes de los 4 meses ni tampoco después de los 7 meses.
+                           </li>
+                           <li>
+                              Evitar la colocación de sales y azucares en los alimentos de los niños.
+                           </li>
+                        </ul>
+                     </h4>
+                     <h4>
+                        Es importante que el niño empieza a tener una independencia alimenticia, pero siempre al cuidado de los padres, identificando alimentos a posiblemente alérgicos y sobre todo consultando a pediatras y nutricionistas.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

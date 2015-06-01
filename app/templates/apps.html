@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/apps/" class="section">Apps</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/apps.jpg" %}" >
+                     <h4>
+                        La tecnología cada día está aportando a facilitar las actividades de las personas en su diario vivir. Por eso, Padres en equipo, te recomienda aplicaciones para tu Android, o  Iphones para el entretenimiento de los bebés, en caso de que te encuentres ocupado en una actividad importante.
+                     </h4>
+                     <h4>
+                        <dl>
+                           <dt>
+                              <a href="https://play.google.com/store/apps/details?id=com.dokdoapps.mybabymusicboxes&hl=es">
+                                 MI BEBÉ CAJAS DE MÚSICA
+                              </a>
+                           </dt>
+                           <dd>
+                              Canciones de cuna para su bebé "Mi bebé cajas de música" Music for Sleep, la meditación, la relajación, la atención prenatal.
+                              Bello juego de cajas de música las melodías para su bebé.
+                              Bellas melodías de las puntuaciones de clásicos y canciones de los niños han sido seleccionadas y añadidos.
+                              Esta aplicación es de pequeña capacidad, equipado con funciones de utilidad solamente.
+                              Jugar todos los días puede aumentar el efecto.
+                           </dd>
+                           <br>
+                           <dt>
+                              <a href="https://play.google.com/store/apps/details?id=com.soundtouch.lite&hl=es">
+                                 SOUND TOUCH LITE
+                              </a>
+                           </dt>
+                           <dd>
+                              Sound Touch Lite es un juego en el cual el niño debe escuchar diversos sonidos y elegir a qué imagen corresponde. La aplicación gratuita incluye 180 pares de sonidos y fotos, divididos en varias categorías: animales, vehículos, instrumentos musicales y artículos del hogar. Además, varias piezas de música clásica actúan como fondo.
+                           </dd>
+                           <dd>
+                              Existe también una versión de pago que, entre otras ventajas, duplica el número de imágenes y sonidos. Disponible para iOS y Android.
+                           </dd>
+                           <br>
+                           <dt>
+                              <a href="https://play.google.com/store/apps/details?id=com.mobileaddicts.rattle&hl=es">
+                                 BABY RATTLE TOY
+                              </a>
+                           </dt>
+                           <dd>
+                              Hay varios programas que convierten el móvil o la tableta en un auténtico sonajero. La llamada Baby Toy Rattle(sonajero de bebé) es una de las más populares. Incluye seis modos con distintas imágenes animadas en pantalla y diferentes sonidos.
+                           </dd>
+                           <dd>
+                              La versión de pago tiene cinco escenas adicionales. Se puede usar en dispositivos conAndroid, además de en iPhone y iPad.
+                           </dd>
+                        </dl>
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

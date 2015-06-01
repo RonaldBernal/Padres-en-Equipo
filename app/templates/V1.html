@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Vestimenta/" class="section">Vestimenta</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium right floated image" src="{% static "assets/articleImg/vestimenta1.jpg" %}" >
+                     <h4>
+                        Los padres disfrutan mucho comprara y elegir la ropa para su bebe, pero muchas veces elijen la moda en vez de los materiales y la comodidad para su pequeño.
+                        Lo más importante es que la ropa sea 100% algodón y evitar telas que tengan fibra sintética  
+                     </h4>
+                     <h3>Se debe tomar en cuenta el clima:</h3>
+                     <h4>
+                        Para tu bebe primero la comodidad, si el tiempo esta helado debes abrigarlo a modo que se sienta cómodo y calientito para que no esté expuesto a cualquier resfriado puedes agregarle un gorrito para que su cabecita se mantenga protegida; pero si el clima es caluroso puedes vestirlo con ropa holgada para que él bebe se sienta cómodo y fresco. Debes evitar la lana y elegir el algodón o mini polar amabas fibras son abrigadas y suaves, estupendas para tu recién nacido.
+                     </h4>
+                     <h4>
+                        Antes de utilizar la ropa para él bebe debes lavarla con un jabón especial o un jabón de coco neutro, debes enjuagarla bien para que no contenga ningún resto de jabón y quede lista para utilizarla. 
+                        Puedes lavarla en lavadora o a mano hazlo como más creas convenientes.
+                     </h4>
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/vestimenta2.jpg" %}" >
+                     <h4>
+                        En general hay que prestar total atención en el material del que está hecha la prenda y comprara prendas fáciles de poner para que evites lastimar a tu bebe.
+                        Evita los botones o asegúrate que estén a los lados para que No lastimar a tu bebe a la hora de quitarle su ropita, los zíperes a tras o adelante son más recomendables; al igual que los elásticos cordones o cualquier cosa que roce a tu bebe y puede lastimarlo evítalos.
+                     </h4>
+                     <h3>Consejos útiles:</h3>
+                     <h4>
+                        <ul style="padding-left: 350px;">
+                           <li>
+                              Siempre debes lavar la ropa con agua tibia y no usar detergentes que puedan irritar la piel de tu bebe.
+                           </li>
+                           <li>
+                              No vestir a tu bebe con ropa de lana, puede causar alergias.
+                           </li>
+                           <li>
+                              Evita botones o cordones que puedan causar asfixia al Bebe.
+                           </li>
+                           <li>
+                              Recuerde que él bebe está en constante crecimiento no compre demasiada ropa.
+                           </li>
+                           <li>
+                              Presta mucho cuidado al elegir la ropa para tu recién nacido, debe de ser cómoda y fácil de quitar.
+                           </li>
+                        </ul>
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

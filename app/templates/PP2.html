@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Papa/" class="section">Para Papá</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium right floated image" src="{% static "assets/articleImg/papa2.jpg" %}" >
+                     <h4>
+                        En las últimas décadas, la vida de las familias de los diferentes continentes ha cambiado muchísimo. Antes eran los padres quienes ejercían autoridad, y los hijos obedecían. Ahora es común que los niños manden en casa, y los padres obedezcan a sus exigencias. 
+                        <br>
+                        Es importante brindar cariño y amor a su hijo sin pasar por alto establecer normativas desde pequeños las cuales les dosifiquen  respeto hacia su persona como padre responsable, pero ¿Qué hay que hacer para ello?
+                     </h4>
+                     <h3>La buena disciplina.</h3>
+                     <h4>
+                        Ser un buen padre de familia no es nada fácil, pero si usted no da la debida corrección a sus hijos, solo empeorará las cosas. ¿Por qué? Porque sus hijos harán lo que quieran y usted terminaría frustrado. Además, si no es claro y constante con autoridad (eso sí, con cariño y amor) al corregirlos, sus niños acabaran confundidos entre lo bueno, lo malo y lo correcto.
+                        <br>
+                        Disciplinar a los niños con cariño y equilibrio los ayuda a pensar y comportarse como es debido. También les da orientación necesaria para tomar buenas decisiones y llegar al crecer, personas de bien.
+                     </h4>
+                     <h3>Consejos de éxito:</h3>
+                     <h4>
+                        Si quiere tener éxito como padre, siga las siguientes reglas al disciplinar a sus hijos.
+                        <ol>
+                           <li>
+                              Sea cariñoso: No saque de quicio a sus hijos, ellos muchas veces se alteran por un tono de voz, enséñeles a atender y escuchar, así mismo, usted demuéstrele que tan importante son para usted con señas de afecto.
+                           </li>
+                           <li>
+                              Sea claro y consistente: Haga que su palabra signifique “Sí”, Sí y su “No”, No. Deje un espacio siempre para un dialogo abierto, esto le ayudara a ser un excelente esposo y un padre ejemplar. Explique siempre las razones del porqué de la decisión y sea contundente en sus argumentos, de pauta a la credibilidad.
+                           </li>
+                           <li>
+                              Sea razonable: La corrección debe ir alineada a un grado de razón, hacemos énfasis en el cariño, la justificación debida y claro está, un grado adecuado, este puede ser, identificar las cosas que su hijo más gusta y separarla de ellas por un tiempo establecido para que él pueda reflexionar.
+                           </li>
+                        </ol>
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

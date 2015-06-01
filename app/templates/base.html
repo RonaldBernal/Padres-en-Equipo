@@ -5,7 +5,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-      <meta name="author" content="Ronald Bernal y Antonio Hernández">
+      <meta name="author" content="Ronald Bernal">
       
       {% block head %}
       {% endblock %}
@@ -14,7 +14,7 @@
       <!-- Semantic UI Core CSS -->
       <link rel="stylesheet" type="text/css" href="{% static "assets/semantic/css/semantic.css" %}">
       <!-- Custom CSS -->
-      <link rel="stylesheet" type="text/css" href="{% static "assets/semantic/css/custom/home.css" %}">
+      <link rel="stylesheet" type="text/css" href="{% static "assets/semantic/css/custom.css" %}">
       <!-- Custom Fonts -->
       <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Kaushan+Script'>
    </head>
@@ -22,41 +22,25 @@
    <body>
    <!-- navbar begins -->
    <div class="navbar">
-      <div class="ui inverted large menu">
+      <div class="ui blue inverted large menu side-padding">
          <div class="left menu">
-            <a href="/profile/" class="brand item">
-               <i class="settings icon"></i>Industrial Network
-            </a>
-            <a href="/profile/" class="active yellow item">
-               <img class="ui navbarimg left floated avatar image" src="{% static "assets/semantic/img/white-image.png" %}">
-               Perfil
+            <a href="/" class="item">
+               <img class="ui image" src="{% static "assets/bootstrap/img/nav_logo_s.png" %}">   
             </a>
          </div>
-         <div class="right menu">
-            <div class="item">
-               <div class="ui action left icon input">
-                  <i class="search icon"></i>
-                  <input type="text" placeholder="Buscar...">
-               </div>
-            </div>
-            <a href="/messages/" class="item">
-               <i class="comments outline icon"></i> Mensajes
+         <div class="right menu top-padding">
+            <a href="/#articles" class="item">
+               ARTÍCULOS
             </a>
-            <a href="/messages/" class="blue item">
-               <i class="users icon"></i> Contactos
+            <a href="/#videos" class="blue item">
+               VIDEOS
             </a>
-            <!-- dropdown begins-->
-            <div class="ui dropdown item">
-               <i class="left options icon"></i>
-               Opciones
-               <i class="dropdown icon"></i>
-               <div class="menu">
-                  <a class="item">Privacidad</a>
-                  <a class="item">Pagos</a>
-                  <a class="item" href="/logout">Cerrar Sesión</a>
-               </div>
-            </div>
-            <!-- dropdown ends-->
+            <a href="/#vipZone" class="blue item">
+               VIP
+            </a>
+            <a href="/#videos" class="blue item">
+               ACERCA DE NOSOTROS
+            </a>
          </div>
       </div>
    </div>

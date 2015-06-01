@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/CuidadosHigiene/" class="section">Cuidados e Higiene</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui medium left floated image" src="{% static "assets/articleImg/cuidados1.jpg" %}" >
+                     <h4>
+                        El cordón umbilical es la parte de piel como un tubo largo y flexible, que era de donde tu bebé se alimentaba, al momento del parto los médicos lo cortan a unos tres centímetros de la pancita de tu bebé.
+                        Este sufre cambios con los días para desprenderse, este proceso dura de 10 a 15 días, es algo totalmente natural, así que no te preocupes. 
+                     </h4>
+                     <h4>
+                        Antes que el cordón umbilical se desprenda tienes que limpiarlo a diario, mantenerlo seco y cubierto para evitar cualquier infección.
+                        Para que la herida cicatrice una vez desprendido el cordón se tardará de 3 a 5 días. Ahora que sabes todo lo del cordón umbilical, te daremos unos pasos sencillos para limpiarlo a diario.
+                     </h4>
+                     <br>
+                     <h4>
+                        Lo que debes tener siempre:
+                        <ul>
+                           <li>
+                              Caja de gasas estériles.
+                           </li>
+                           <li>
+                              Fajas (Fajero).
+                           </li>
+                           <li>
+                              Alcohol 90%.
+                           </li>
+                        </ul>
+                        Pasos:
+                        <ol>
+                           <li>
+                              Lava bien tus manos con agua y jabón, también puedes usar jabón yodado (este es un jabón esterilizante).
+                           </li>
+                           <li>
+                              Humedece la gasa con alcohol y limpia suavemente la herida y alrededor de la piel.
+                           </li>
+                           <li>
+                              Seca muy bien la zona, repite una vez más para asegurarte.
+                           </li>
+                           <li>
+                              Ahora cubre el cordón con una gasa y coloca la faja alrededor de la cintura del bebé con mucho cuidado para que no quede apretado.
+                           </li>
+                        </ol>
+                     </h4>
+                     <h4>Realiza la limpieza del ombligo de dos a tres veces al día.</h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}

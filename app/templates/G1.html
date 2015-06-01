@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block head %}
+   <meta name="description" content="Article detail view">
+   <title>{{title}}</title>
+{% endblock head %}
+
+{% block content %}
+   <div class="container">
+      <div class="ui large breadcrumb">
+         <a href="/#articles" class="section">Articulos</a>
+         <i class="right chevron icon divider"></i>
+         <a href="/Juegos/" class="section">Juegos para padres e Hijos</a>
+         <i class="right chevron icon divider"></i>
+         <div class="active section">{{title}}</div>
+      </div>
+      <div class="ui hidden divider"></div>
+      <div class="ui centered grid">
+         <div class="twelve wide column">
+            <div class="ui raised segment">
+               <div class="sizer">
+                 <div class="ui center aligned huge dividing header">{{title}}</div>
+                 <div class="justified description">
+                     <img class="ui small left floated image" src="{% static "assets/articleImg/juegos1.jpg" %}" >
+                     <h4>
+                        Una actividad muy creativa para la familia es que los padres se disfracen o utilicen elementos atractivos de los cuentos de hadas que les leen a sus hijos. 
+                     </h4>
+                     <h4>
+                        Con el fin de que los niños puedan disfrutar un tiempo ameno con sus padres y disfruten de la esencia de la lectura desde temprana edad, para así evitar el error de usar la lectura para dormir al niño, sino más bien de que el niño tome un interés a medida vaya creciendo.
+                     </h4>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock content %}
