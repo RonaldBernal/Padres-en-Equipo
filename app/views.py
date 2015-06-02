@@ -67,3 +67,6 @@ def G3(request):
 
 def apps(request):
 	return render(request, 'apps.html', {"title": "Aplicaciones para el celular de mamá y papá"})
+
+def chat(request):
+	return render(request, 'chat.html', {"title": "Tu pediatra online"})

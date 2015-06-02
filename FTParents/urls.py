@@ -28,6 +28,7 @@ urlpatterns = patterns('',
     url(r'^G2/$', 'app.views.G2', name ='detail'),
     url(r'^G3/$', 'app.views.G3', name ='detail'),
     url(r'^apps/$', 'app.views.apps', name ='detail'),
+    url(r'^chat/$', 'app.views.chat', name ='chat'),
     url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon.ico')),
     #url(r'^admin/', include(admin.site.urls)),
 )
